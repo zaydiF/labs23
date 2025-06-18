@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.List;
 import java.util.ArrayList;
 
@@ -48,16 +46,16 @@ class User implements Observer{
 
 public class Main {
     public static void main(String[] args) {
-        User user1 = new User("Linda");
-        User user2 = new User("Alex");
+        User user1 = new User("Dima");
+        User user2 = new User("Kirill");
 
-        Group group1 = new Group("Шишки & Орешки");
-        Group group2 = new Group("Интеллектуальные мемы");
-        Group group3 = new Group("Новости Пенза");
-        Group group4 = new Group("ПКИПТ (IT-Колледж)");
-        Group group5 = new Group("IGM");
-        Group group6 = new Group("Котятки");
-        Group group7 = new Group("Тушканчики каждый день");
+        Group group1 = new Group("ITproer");
+        Group group2 = new Group("CyberArena");
+        Group group3 = new Group("DRIFT ");
+        Group group4 = new Group("IT-Колледж");
+        Group group5 = new Group("JDM");
+        Group group6 = new Group("CS GO2");
+        Group group7 = new Group("Melon Music");
 
         group1.addObserver(user1);
         group2.addObserver(user1);
@@ -68,12 +66,12 @@ public class Main {
         group6.addObserver(user2);
         group7.addObserver(user2);
 
-        group1.notifyObserver("Большой сырный раф со скидкой 30%");
-        group2.notifyObserver("Когда ты подписан на 100 пабликов, но всё равно проверяешь уведомления вручную");
-        group3.notifyObserver("Град в Колышлейском районе");
-        group4.notifyObserver("Награждение активистов колледжа");
-        group5.notifyObserver("Вышел новый Game State с The Witcher 4");
-        group6.notifyObserver("Пушистый котя");
-        group7.notifyObserver("Тушканчик(большооой)");
+        group1.notifyObserver("Сайт за час");
+        group2.notifyObserver("Турнир по играм");
+        group3.notifyObserver("Гонки дрифт гача япония");
+        group4.notifyObserver("Новости Колледж");
+        group5.notifyObserver("Тюнинг  Авто");
+        group6.notifyObserver("Новости по кс");
+        group7.notifyObserver("Музыка");
     }
 }
